@@ -1,0 +1,127 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}
+.section-1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border: 2px solid black;
+    padding-left: 15px;
+    width: 420px;
+    background-color: aquamarine;
+}
+.section-2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border: 2px solid black;
+    margin-left: 10px;
+    padding-left: 15px;
+    width: 420px;
+    background-color: lightcoral;
+}
+.section-3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border: 2px solid black;
+    margin-left: 10px;
+    width: 420px;
+    background-color: rgb(213, 212, 212);
+    padding-left: 15px;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: darkkhaki;
+    height: 80px;
+    margin: 10px;
+   
+  }
+
+h3 {
+    text-align: center;
+}
+
+h5 {
+    text-align: right;
+    margin-top: 0%;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.first-h{
+    background-color: blanchedalmond;
+    width: 80px;
+
+}
+.second-h{
+    background-color: rgb(33, 110, 110);
+    width: 80px;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+ul li {
+    list-style: none;
+    padding: 10px;
+}
+.third-h{
+    background-color: rgb(231, 131, 131);
+    width: 80px;
+}
+
+.input{
+    height: 30px;
+    margin-top: 12px;
+    margin-left: 10px;
+    width: 400px;
+}
+p{
+   margin-right: 30px; 
+}
+
+/*mobile view*/
+@media (max-width: 767px) {
+    .container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+}
+
+/* tablet view */
+@media (min-width: 768px) and (max-width: 991px){
+       .container{
+        flex-wrap: wrap;
+       }
+
+       .section-1, .section-2{
+        flex: 1;
+        width: 100%;
+       }
+       .section-3{
+       margin-top: 10px;
+       width: 100%;
+       }
+    }
+    
+    /*desktop view*/
+    @media (min-width: 992px){
+        .section-1{width: 100%;}
+        .section-2{width: 100%;}
+        .section-3{width: 100%;}
+    }
+
+
+
+    
